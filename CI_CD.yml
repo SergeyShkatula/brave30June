@@ -1,0 +1,15 @@
+     stages:
+       - build
+       - test
+
+     build-job:
+       stage: build
+       script:
+         - echo "Compiling the code..."
+         - make
+
+     test-job:
+       stage: test
+       script:
+         - echo "Running tests..."
+         - make test
